@@ -7,7 +7,9 @@ export interface IPlaylistDto {
   artwork: string;
 }
 
-export interface IPlaylistsDto {
-  name: string;
-  content: IPlaylistDto[];
+export interface IFeaturedPlaylistsDto {
+  featuredPlaylists: {
+    name: string;
+    content: IPlaylistDto[];
+  };
 }
