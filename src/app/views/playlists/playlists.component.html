@@ -1,1 +1,14 @@
-<p>playlists works!</p>
+<div class="playlists-view">
+  <h1>{{ title }}</h1>
+
+  <div class="playlists-view__container container">
+    <div class="row">
+      <div
+        *ngFor="let playlist of playlists"
+        class="playlists-view__wrapper col-12 col-sm-6 col-lg-3"
+      >
+        <app-playlist [playlist]="playlist"></app-playlist>
+      </div>
+    </div>
+  </div>
+</div>
