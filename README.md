@@ -1,22 +1,27 @@
-# Turner & Townsend Frontend Technical Assessment
+# TurnerTownsendTest
 
-Welcome & thank you so much for your interest in joining our team and for taking the time to apply to this role. 
-The purpose of this assessment is for us to get a good idea of how you approach solving problems. 
-The next stage after submitting a solution is for you to come and meet the team and talk about your solution.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
-Thank you kindly!
+## Development server
 
-To submit a solution, please send us a link to a Git respository. 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Details
+## Code scaffolding
 
-- A README with your thoughts, comments and challenges/successes would be well received.
-- Create an Angular application which displays a list of `Playslists` from the following resource `https://portal.organicfruitapps.com/programming-guides/v2/us_en-us/featured-playlists.json`.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## We would like to see
-- Clean architecture principles, using functional or OOP principles.
-- Any tech you like, including style, libs and more (we reccomened angular).
-- Clear and a clean approach to styles.
-- Simple markup and use of html5 standards.
-- displaying knoweldge of tests are a plus.
-- Show some modularity in layouts and routing.
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
