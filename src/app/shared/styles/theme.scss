@@ -1,0 +1,17 @@
+@import 'variables';
+
+// Links
+
+a {
+  font-size: $linkFontSize;
+  font-weight: $linkFontWeight;
+  color: $linkTextColor;
+}
+
+// Titles
+
+h1 {
+  color: $titleH1TextColor;
+  font-size: $titleH1FontSize;
+  font-weight: $titleH1FontWeight;
+}
