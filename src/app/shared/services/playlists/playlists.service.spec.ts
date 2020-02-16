@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { PlaylistsService } from './playlists.service';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from '@shared/shared.module';
 
 describe('PlaylistsService', () => {
   let service: PlaylistsService;

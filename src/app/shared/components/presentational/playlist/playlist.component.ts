@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IPlaylistDto } from 'src/shared/services/playlists/playlists.interface';
+import { IPlaylistDto } from '@shared/services/playlists/playlists.interface';
 
 @Component({
   selector: 'app-playlist',
