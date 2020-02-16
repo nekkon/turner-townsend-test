@@ -1,19 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { PlaylistsComponent } from './views/playlists/playlists.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PlaylistComponent } from 'src/shared/components/presentational/playlist/playlist.component';
 import { NavigationComponent } from 'src/shared/components/containers/navigation/navigation.component';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routing';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PlaylistsComponent,
-    PlaylistComponent,
-    NavigationComponent
-  ],
-  imports: [BrowserModule, HttpClientModule],
+  declarations: [AppComponent, NavigationComponent],
+  imports: [BrowserModule, RouterModule.forRoot(routes), HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
