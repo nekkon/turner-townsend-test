@@ -132,8 +132,13 @@
               "devServerTarget": "turner-townsend-test:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "turner-townsend-test"
 }
