@@ -1,10 +1,20 @@
 .playlists-view {
+  max-width: 1280px;
 
-  &__wrapper {
-    padding: 0;
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    border-bottom: 1px solid #8e8e93;
+    padding: 15px 0;
+    margin: 0;
   }
 
-  &__container {
-    max-width: 1280px;
+  .row {
+    padding-top: 20px;
+  }
+
+  &__wrapper {
+    padding: 10px;
   }
 }
