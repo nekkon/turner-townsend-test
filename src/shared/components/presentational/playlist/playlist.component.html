@@ -1,3 +1,13 @@
 <div class="playlist">
-  <img class="playlist__image" [src]="playlist?.artwork" />
+  <div class="playlists__container container">
+    <div class="row">
+      <div class="col-5 playlist__left">
+        <a [href]="playlist?.url"><img [src]="playlist?.artwork"/></a>
+      </div>
+      <div class="col-7 playlist__right">
+        <a [href]="playlist?.url">{{ playlist?.name }} </a>
+        <span>{{ playlist?.curator_name }}</span>
+      </div>
+    </div>
+  </div>
 </div>
