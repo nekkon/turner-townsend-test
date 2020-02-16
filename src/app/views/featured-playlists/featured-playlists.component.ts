@@ -15,6 +15,7 @@ import { Title, Meta } from '@angular/platform-browser';
 export class FeaturedPlaylistsComponent implements OnInit, OnDestroy {
   title: string;
   playlists: IPlaylistDto[];
+  isContentLoaded: boolean;
 
   playlistsSubscription: Subscription;
 
@@ -37,6 +38,7 @@ export class FeaturedPlaylistsComponent implements OnInit, OnDestroy {
         const featuredPlaylists = response.featuredPlaylists;
         this.setTitle(featuredPlaylists.name);
         this.playlists = featuredPlaylists.content;
+        this.isContentLoaded = true;
         this.changeDetectorRef.detectChanges();
       });
   }

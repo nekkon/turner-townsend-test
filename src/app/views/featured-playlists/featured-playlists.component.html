@@ -1,8 +1,13 @@
-<div class="featured-playlists container">
-  <h1 class="featured-playlists__title">{{ title }}</h1>
-  <div class="featured-playlists__row row">
-    <div *ngFor="let playlist of playlists" class="col-12 col-sm-6 col-lg-4">
-      <app-playlist [playlist]="playlist"></app-playlist>
+<ng-container *ngIf="isContentLoaded; else loading">
+  <div class="featured-playlists container">
+    <h1 class="featured-playlists__title">{{ title }}</h1>
+    <div class="featured-playlists__row row">
+      <div *ngFor="let playlist of playlists" class="col-12 col-sm-6 col-lg-4">
+        <app-playlist [playlist]="playlist"></app-playlist>
+      </div>
     </div>
   </div>
-</div>
+</ng-container>
+<ng-template #loading>
+  <div class="featured-playlists container"><app-loader></app-loader></div>
+</ng-template>
