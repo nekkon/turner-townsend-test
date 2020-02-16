@@ -5,6 +5,7 @@ import {
   IPlaylistDto
 } from 'src/shared/services/playlists/playlists.interface';
 import { Subscription } from 'rxjs';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-playlists',
@@ -18,6 +19,7 @@ export class PlaylistsComponent implements OnInit, OnDestroy {
   playlistsSubscription: Subscription;
 
   constructor(
+    private titleService: Title,
     private playlistsService: PlaylistsService,
     private changeDetectorRef: ChangeDetectorRef
   ) {}
@@ -27,7 +29,7 @@ export class PlaylistsComponent implements OnInit, OnDestroy {
       .getFeaturedPlaylists()
       .subscribe((response: IFeaturedPlaylistsDto) => {
         const featuredPlaylists = response.featuredPlaylists;
-        this.title = featuredPlaylists.name;
+        this.setTitle(featuredPlaylists.name);
         this.playlists = featuredPlaylists.content;
         this.changeDetectorRef.detectChanges();
       });
@@ -37,5 +39,10 @@ export class PlaylistsComponent implements OnInit, OnDestroy {
     if (this.playlistsSubscription) {
       this.playlistsSubscription.unsubscribe();
     }
+  }
+
+  setTitle(title: string) {
+    this.title = title;
+    this.titleService.setTitle(title);
   }
 }

@@ -2,12 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-5 playlist__left">
-        <a [href]="playlist?.url"
-          ><img [src]="playlist?.artwork" class="playlist__image"
+        <a [href]="playlist?.url" [title]="playlist?.name"
+          ><img
+            [src]="playlist?.artwork"
+            [alt]="playlist?.name"
+            class="playlist__image"
         /></a>
       </div>
       <div class="col-7 playlist__right">
-        <a [href]="playlist?.url" class="playlist__link"
+        <a
+          [href]="playlist?.url"
+          [title]="playlist?.name"
+          class="playlist__link"
           >{{ playlist?.name }}
         </a>
         <span class="playlist__extra">{{ playlist?.curator_name }}</span>
