@@ -7,10 +7,10 @@ import { IFeaturedPlaylistsDto } from './playlists.interface';
   providedIn: 'root'
 })
 export class PlaylistsService {
-  private readonly featuredPlaylistsUrl: string =
+  public readonly featuredPlaylistsUrl: string =
     'https://portal.organicfruitapps.com/programming-guides/v2/us_en-us/featured-playlists.json';
 
-  constructor(private http: HttpClient) {}
+  constructor(public http: HttpClient) {}
 
   getFeaturedPlaylists(): Observable<IFeaturedPlaylistsDto> {
     return this.http.get<IFeaturedPlaylistsDto>(this.featuredPlaylistsUrl);

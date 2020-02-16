@@ -19,9 +19,9 @@ export class FeaturedPlaylistsComponent implements OnInit, OnDestroy {
   playlistsSubscription: Subscription;
 
   constructor(
-    private meta: Meta,
+    public meta: Meta,
     private titleService: Title,
-    private playlistsService: PlaylistsService,
+    public playlistsService: PlaylistsService,
     private changeDetectorRef: ChangeDetectorRef
   ) {
     this.meta.updateTag({
