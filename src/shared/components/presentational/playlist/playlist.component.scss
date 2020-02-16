@@ -1,26 +1,23 @@
 .playlist {
   &__left {
     padding: 5px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 6px;
-    }
   }
 
-  &__right {
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
 
-    a {
-      display: block;
-      font-size: 24px;
-      font-weight: 600;
-      color: #000000;
-    }
+  &__link {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+  }
 
-    span {
-      font-size: 13px;
-      font-weight: normal;
-    }
+  &__extra {
+    font-size: 13px;
+    font-weight: normal;
   }
 }
