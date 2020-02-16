@@ -5,24 +5,30 @@ import {
   IPlaylistDto
 } from '@shared/services/playlists/playlists.interface';
 import { Subscription } from 'rxjs';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-playlists',
-  templateUrl: './playlists.component.html',
-  styleUrls: ['./playlists.component.scss']
+  selector: 'app-featured-playlists',
+  templateUrl: './featured-playlists.component.html',
+  styleUrls: ['./featured-playlists.component.scss']
 })
-export class PlaylistsComponent implements OnInit, OnDestroy {
+export class FeaturedPlaylistsComponent implements OnInit, OnDestroy {
   title: string;
   playlists: IPlaylistDto[];
 
   playlistsSubscription: Subscription;
 
   constructor(
+    private meta: Meta,
     private titleService: Title,
     private playlistsService: PlaylistsService,
     private changeDetectorRef: ChangeDetectorRef
-  ) {}
+  ) {
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Featured Playlists page'
+    });
+  }
 
   ngOnInit(): void {
     this.playlistsSubscription = this.playlistsService

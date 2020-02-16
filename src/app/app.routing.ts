@@ -4,8 +4,8 @@ export const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./views/playlists/playlists.module').then(
-        m => m.PlaylistsViewModule
+      import('./views/featured-playlists/featured-playlists.module').then(
+        m => m.FeaturedPlaylistsViewModule
       )
   }
 ];
