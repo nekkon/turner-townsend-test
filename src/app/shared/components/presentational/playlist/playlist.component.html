@@ -1,7 +1,7 @@
 <div class="playlist container">
   <div class="playlist__row row">
     <div class="playlist__left col-5">
-      <a [href]="playlist?.url" [title]="playlist?.name" target=”_blank”
+      <a [href]="playlist?.url" [title]="playlist?.name" target="”_blank”"
         ><img
           [src]="playlist?.artwork"
           [alt]="playlist?.name"
@@ -9,7 +9,11 @@
       /></a>
     </div>
     <div class="playlist__right col-7">
-      <a [href]="playlist?.url" [title]="playlist?.name" class="playlist__link" target=”_blank”
+      <a
+        [href]="playlist?.url"
+        [title]="playlist?.name"
+        class="playlist__link"
+        target="”_blank”"
         >{{ playlist?.name }}
       </a>
       <span class="playlist__extra">{{ playlist?.curator_name }}</span>
