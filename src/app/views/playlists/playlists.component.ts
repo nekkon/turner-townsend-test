@@ -1,9 +1,9 @@
 import { Component, OnInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
-import { PlaylistsService } from 'src/shared/services/playlists/playlists.service';
+import { PlaylistsService } from '@shared/services/playlists/playlists.service';
 import {
   IFeaturedPlaylistsDto,
   IPlaylistDto
-} from 'src/shared/services/playlists/playlists.interface';
+} from '@shared/services/playlists/playlists.interface';
 import { Subscription } from 'rxjs';
 import { Title } from '@angular/platform-browser';
 

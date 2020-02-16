@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
-import { SharedModule } from 'src/shared/shared.module';
+import { CoreModule } from '@core/core.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    SharedModule,
+    CoreModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
