@@ -6,7 +6,6 @@ import { NavigationComponent } from '@core/components/navigation/navigation.comp
 @NgModule({
   declarations: [NavigationComponent],
   imports: [CommonModule, HttpClientModule],
-  providers: [],
   exports: [NavigationComponent]
 })
 export class CoreModule {}

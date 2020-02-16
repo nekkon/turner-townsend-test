@@ -6,6 +6,10 @@ a {
   font-size: $linkFontSize;
   font-weight: $linkFontWeight;
   color: $linkTextColor;
+
+  &:hover {
+    color: $linkTextColor;
+  }
 }
 
 // Titles

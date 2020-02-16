@@ -1,6 +1,12 @@
+@import 'variables';
+
 .playlist {
+  &__row {
+    padding-bottom: 10px;
+  }
+
   &__left {
-    padding: 5px;
+    padding: 0px;
   }
 
   &__image {
@@ -14,7 +20,8 @@
   }
 
   &__extra {
-    font-size: 13px;
-    font-weight: normal;
+    color: $subtitleTextColor;
+    font-size: $subtitleFontSize;
+    font-weight: $subtitleFontWeight;
   }
 }

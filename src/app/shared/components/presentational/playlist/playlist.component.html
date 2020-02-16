@@ -1,23 +1,18 @@
-<div class="playlist">
-  <div class="container">
-    <div class="row">
-      <div class="col-5 playlist__left">
-        <a [href]="playlist?.url" [title]="playlist?.name"
-          ><img
-            [src]="playlist?.artwork"
-            [alt]="playlist?.name"
-            class="playlist__image"
-        /></a>
-      </div>
-      <div class="col-7 playlist__right">
-        <a
-          [href]="playlist?.url"
-          [title]="playlist?.name"
-          class="playlist__link"
-          >{{ playlist?.name }}
-        </a>
-        <span class="playlist__extra">{{ playlist?.curator_name }}</span>
-      </div>
+<div class="playlist container">
+  <div class="playlist__row row">
+    <div class="playlist__left col-5">
+      <a [href]="playlist?.url" [title]="playlist?.name" target=”_blank”
+        ><img
+          [src]="playlist?.artwork"
+          [alt]="playlist?.name"
+          class="playlist__image"
+      /></a>
+    </div>
+    <div class="playlist__right col-7">
+      <a [href]="playlist?.url" [title]="playlist?.name" class="playlist__link" target=”_blank”
+        >{{ playlist?.name }}
+      </a>
+      <span class="playlist__extra">{{ playlist?.curator_name }}</span>
     </div>
   </div>
 </div>
