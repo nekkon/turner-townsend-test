@@ -1,15 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FeaturedPlaylistsViewModule } from './featured-playlists.module';
 import { FeaturedPlaylistsComponent } from './featured-playlists.component';
+import { CoreModule } from '@core/core.module';
 import { of } from 'rxjs';
 
-describe('PlaylistsComponent', () => {
+describe('FeaturedPlaylistsComponent', () => {
   let component: FeaturedPlaylistsComponent;
   let fixture: ComponentFixture<FeaturedPlaylistsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [FeaturedPlaylistsViewModule]
+      imports: [CoreModule, FeaturedPlaylistsViewModule]
     }).compileComponents();
   }));
 
