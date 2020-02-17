@@ -3,19 +3,19 @@
 // Links
 
 a {
-  font-size: $linkFontSize;
-  font-weight: $linkFontWeight;
-  color: $linkTextColor;
+  font-size: $link-font-size;
+  font-weight: $link-font-weight;
+  color: $link-text-color;
 
   &:hover {
-    color: $linkTextColor;
+    color: $link-text-color;
   }
 }
 
 // Titles
 
 h1 {
-  color: $titleH1TextColor;
-  font-size: $titleH1FontSize;
-  font-weight: $titleH1FontWeight;
+  color: $title-h1-text-color;
+  font-size: $title-h1-font-size;
+  font-weight: $title-h1-font-weight;
 }

@@ -4,10 +4,10 @@
   max-width: 1280px;
 
   &__title {
-    font-size: $titleH1FontSize;
-    font-weight: $titleH1FontWeight;
-    color: $titleH1TextColor;
-    border-bottom: 1px solid $borderColor;
+    font-size: $title-h1-font-size;
+    font-weight: $title-h1-font-weight;
+    color: $title-h1-text-color;
+    border-bottom: 1px solid $border-color;
     padding: 15px 0;
     margin: 0;
   }
